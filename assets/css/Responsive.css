@@ -1,0 +1,306 @@
+/* ==================== RESPONSIVE STYLES - CLEANED ==================== */
+/* Only classes actually used in HTML files */
+@media only screen and (max-width: 1300px) {
+.advantages-wrapper{
+  min-height: unset;
+  background: unset;
+  display: flex;
+  flex-wrap: wrap;
+  row-gap: 30px;
+}
+
+.advantage-item {
+    position: static;
+    width: 50%;
+}
+
+}
+/* ==================== MEDIA QUERY: 1200px ==================== */
+@media only screen and (max-width: 1200px) {
+  .container {
+    max-width: 95%;
+  }
+}
+
+/* ==================== MEDIA QUERY: 991px - TABLET ==================== */
+@media only screen and (max-width: 991px) {
+ /* .arrow{
+transform: rotate(90deg) !important;
+} */
+
+ .nav-item:not(:last-child) {
+        border-bottom: 1px solid rgb(218, 218, 218);
+        line-height: 31px;
+    }
+ .nav-link:hover::after {
+    width: 0%;
+}
+ .shape-image {
+    max-width: 90% !important;
+ }
+ .offcanvas{
+  max-width: 90%;
+ }
+   .hero-circle {
+    width: 90%;
+  }
+.doctor-frame {
+  right: 0px;
+  left: 0px;
+          top: 0px;
+     height: 500px;
+            width: 120%;
+        transform: translate(0%, -24%) rotate(-7deg) !important;
+    background: var(--linear-gradient);
+}
+  /* Typography */
+  h3 {
+    font-size: 24px !important;
+    line-height: 31px !important;
+  }
+
+  h4 {
+    font-size: 20px !important;
+    line-height: 27px;
+  }
+
+  h5 {
+    font-size: 27px !important;
+    line-height: 34px;
+    font-weight: 600;
+  }
+
+  h6 {
+    font-weight: bold;
+  }
+
+  /* Buttons */
+  .btn {
+    font-size: 13px !important;
+    font-weight: 400 !important;
+  }
+
+  /* Images */
+  .img-container {
+    height: 340px;
+  }
+
+  /* Layout */
+  .w-75 {
+    width: 100% !important;
+  }
+
+  .w-25 {
+    width: 100% !important;
+  }
+
+  /* Footer */
+  footer img {
+    width: 150px;
+  }
+
+  footer h4 {
+    font-size: 16px;
+  }
+      .navContainer .nav-item{
+    display: flex;
+border-bottom: 1px solid rgb(218, 218, 218);
+}
+   .nav-link:hover span::after {
+  width: 0% !important;
+}
+.lan {
+    color: rgb(0, 0, 0);
+}
+}
+
+/* ==================== MEDIA QUERY: 770px - MOBILE ==================== */
+@media only screen and (max-width: 770px) {
+.hero-circle .position-absolute {
+    transform: translate(-19%, -50%);}
+      p {
+        font-size: 16px !important;
+    }
+
+    .language-switcher .lang-btn {
+    min-width: 45px;
+    height: 24px;
+    padding: 0 12px;
+    font-size: 14px;
+}
+  /* RTL Support */
+  html[lang="ar"] .text-md-start.text-center,
+  html[lang="ar"] .text-md-end.text-center {
+    text-align: center !important;
+  }
+
+  .img-container {
+    height: 330px;
+  }
+
+  .header-div {
+    height: 220px;
+  }
+
+
+  
+
+  /* Grid Layout */
+  .container-divs div:nth-child(3n+2) {
+    padding-inline-start: 4px;
+  }
+
+  .container-divs div:nth-child(3n+1) {
+    padding-inline-end: 4px;
+  }
+
+  .container-divs div:nth-child(3n) {
+    margin-block: 16px;
+  }
+}
+
+/* ==================== MEDIA QUERY: 550px - SMALL MOBILE ==================== */
+@media only screen and (max-width: 550px) {
+.doctor-frame {
+
+     height: 550px;
+            width: 138%;
+        transform: translate(0%, -24%) rotate(-7deg) !important;
+}
+  
+  h1, h2, h3, h4, h5 {
+    font-size: 18px !important;
+  }
+.advantage-item {
+  width: 100% ;
+}
+  label:not(.form-check-label) {
+    font-size: 15px;
+  }
+
+  footer a {
+    font-size: 14px;
+  }
+}
+
+/* ==================== MEDIA QUERY: 450px - EXTRA SMALL MOBILE ==================== */
+@media only screen and (max-width: 450px) {
+.navbar-brand img{
+  max-width: 90px;
+}
+  .doctor-frame {
+
+        transform: translate(0%, -18%) rotate(-7deg) !important;
+}
+  .img-card {
+    height: 250px !important;
+  }
+
+  p {
+    font-size: 14px !important;
+    line-height: 18px;
+  }
+
+}
+
+/* ==================== MEDIA QUERY: 991px+ DESKTOP ==================== */
+@media only screen and (min-width: 991px) {
+
+  .achievements-section .col-6::after{
+content: "";
+position: absolute;
+right: 0px;
+top: 0px;
+bottom: 0px;
+border-right: 1px solid var(--mainColor4);
+  }
+    .achievements-section .col-6:last-child::after{
+content: unset;
+  }
+.navContainer .row {backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px); 
+   border: 1px solid rgba(255, 255, 255, 0.22);
+}
+  .slider-home-nav::after{
+    left: 0px;
+    right: 0px;
+    height: 40px;
+    background: linear-gradient(to bottom, rgba(102, 102, 102, 0), #000000);
+    position: absolute;
+    content: "";
+    bottom: 0px;
+  }
+  /* Home Slider Navigation */
+  body:has(.slider-home-nav,.header-div) .nav-link span {
+    color: var(--mainColor4);
+    font-weight: 400;
+  }
+
+    body:has(.slider-home-nav,.header-div) .navContainer {
+        position: absolute;
+        top: 0px;
+        right: 0px;
+        left: 0px;
+    }
+ body:has(.slider-home-nav,.header-div)   .navContainer .LanguageMenu svg {
+    transition: transform 0.2s ease-in-out;
+
+
+  }
+  body:has(.slider-home-nav,.header-div)  .navContainer .LanguageMenu svg path{
+
+    stroke: rgb(255, 254, 254);
+
+  }
+ 
+   body:has(.slider-home-nav)  .navContainer .LanguageMenu svg path:hover {
+    transform: rotateY(180deg);
+
+  }
+ body:has(.slider-home-nav,.header-div) .navContainer .nav-link span {
+    color: var(--mainColor4);
+    font-weight: 400;
+}
+  .squre-after {
+    position: relative;
+  }
+    .squre-after::after {
+      position: absolute;
+      content: "";
+      width: 120px;
+      bottom: 0px;
+      left: -50px;
+      top: 0px;
+      transform: scaleX(1);
+      background-image: url(../imgs/home/aftersqure.svg);
+      background-position: left;
+      background-repeat: no-repeat;
+      background-size: contain;
+      z-index: -1;
+    }
+    .nav-item   {
+display: flex;
+justify-content: center;
+align-items: center;
+  }
+
+        .squre-after:nth-child(1)::after {
+        right: -50px;
+        transform: scaleX(-1);
+        left: auto;
+      }
+      html[lang="ar"] .squre-after::after {
+  right: -50px;
+  left: auto;
+        transform: scaleX(-1);
+
+      }
+            html[lang="ar"] .squre-after:nth-child(1)::after  {
+  left: -50px;
+  right: auto;
+        transform: scaleX(1);
+
+      }
+
+      
+}
